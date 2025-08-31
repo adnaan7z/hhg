@@ -1,10 +1,7 @@
  [build]
-  command = "npm run build"
+  command = "npm run build && npm run export"
   publish = "out"
 
-# Disable Next.js plugin (since we are using static export)
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  [plugins.inputs]
-    disable = true
+[build.environment]
+  NODE_VERSION = "22"
 
