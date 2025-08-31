@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  output: 'export', // ✅ This tells Next.js to build static HTML for Netlify
+};
 
-export default nextConfig
+export default nextConfig;
