@@ -1,9 +1,6 @@
  
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ✅ Required for Netlify static export
-  output: 'export',
-
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -11,8 +8,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true, // ✅ Needed for static export
+    unoptimized: true,
   },
-};
+  output: 'export',   // ✅ This replaces `next export`
+}
 
-export default nextConfig;
+export default nextConfig
