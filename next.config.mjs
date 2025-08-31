@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+ /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
@@ -9,7 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export', // ✅ This tells Next.js to build static HTML for Netlify
-};
+  output: 'export',  // ✅ this is required for static export
+}
 
-export default nextConfig;
+export default nextConfig
+
