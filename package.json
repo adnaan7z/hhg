@@ -1,12 +1,12 @@
-{
+ {
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "build": "next build && next export",
-  "dev": "next dev",
-  "lint": "next lint",
-  "start": "next start"
+    "dev": "next dev",
+    "build": "next build",          // ✅ build will automatically export to /out
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@ai-sdk/google": "latest",
@@ -74,3 +74,4 @@
     "typescript": "^5"
   }
 }
+
